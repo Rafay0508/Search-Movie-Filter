@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 3</title>
+  </head>
+  <body>
+    <h1>UI: (Currently Year and Language is Working)</h1>
+    <div style="width: 500px">
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        "
+      >
+        <span>
+          <label for=""
+            >GENRE <br />
+            <select name="" id="genre" style="width: 150px">
+              <option value="all">All</option>
+              <option value="Drama">Drama</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Action">Action</option>
+            </select>
+          </label>
+        </span>
+        <span>
+          <label for=""
+            >YEAR <br />
+            <select name="" id="year" style="width: 150px">
+              <option value="all">All</option>
+              <option value="2023">2023</option>
+              <option value="2022">2022</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+              <option value="2015">2015</option>
+              <option value="2014">2014</option>
+              <option value="2013">2013</option>
+              <option value="2012">2012</option>
+              <option value="2011">2011</option>
+              <option value="2010">2010</option>
+              <option value="2009">2009</option>
+              <option value="2008">2008</option>
+              <option value="2007">2007</option>
+              <option value="2006">2006</option>
+              <option value="2005">2005</option>
+              <option value="2004">2004</option>
+              <option value="2003">2003</option>
+              <option value="2002">2002</option>
+              <option value="2001">2001</option>
+              <option value="2000">2000</option>
+            </select>
+          </label>
+        </span>
+        <span>
+          <label for=""
+            >LANGUAGE <br />
+            <select name="" id="language" style="width: 150px">
+              <option value="English">English</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Portuguese">Portuguese</option>
+              <option value="Italian">Italian</option>
+            </select>
+          </label>
+        </span>
+      </div>
+      <br />
+      <div>
+        <label for=""
+          >RATING <br />
+          <select name="" id="" style="width: 500px">
+            <option value="all">All</option>
+          </select>
+        </label>
+      </div>
+      <br />
+      <button onclick="search()">Search</button>
+    </div>
+    <br />
+    <table border="2">
+      <thead>
+        <td>S.NO</td>
+        <td>Rank</td>
+        <td>Movie</td>
+        <td>Year</td>
+      </thead>
+      <tbody id="table"></tbody>
+    </table>
+    <script src="app.js"></script>
+  </body>
+</html>
